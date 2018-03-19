@@ -5,9 +5,9 @@ const io = require('socket.io').listen(server);
 const bodyParser = require('body-parser');
 let temps;
 let compteur, points;
+let server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+let server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 //var cookieParser = require(); À implémenter
-app.set('port', (process.env.PORT || 8081));
-
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({
     extended: false
@@ -39,7 +39,7 @@ app.post('/jeu', function (req, res) {
 // =========================
 // DÉMARRAGE DU SERVEUR
 //==========================
-server.listen(app.get('port'), function () {
+server.listen(server_port, server_ip_address, function () {
     console.log('Listening on ' + server.address().port);
     const temps = process.hrtime();
     //Enregistre les infos du drapeau;
