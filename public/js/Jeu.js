@@ -71,9 +71,7 @@ DRAPEAU.Jeu.prototype = {
         this.game.load.image('projectile', 'medias/img/gem-1.png');
     },
     create: function () {
-        //this.signaux = new Phaser.Signal();
-        //this.signaux.add(this.toucheBase, this);
-
+       
         //Démarrage du système de physique
         this.game.physics.startSystem(Phaser.Physics.ARCADE);
         this.creerCarte();
