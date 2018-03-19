@@ -66,7 +66,7 @@ DRAPEAU.Jeu.prototype = {
         this.game.load.image('drapeau', 'medias/img/drapeau.png');
         this.game.load.spritesheet('persoMarche', 'medias/img/persoSpritesheet.png', 32, 32);
         this.game.load.spritesheet('taupeMarche', 'medias/img/taupeSpritesheet.png', 32, 32);
-        this.game.load.spritesheet('arbreMarche', 'medias/img/arbreSpritesheet.png', 32, 32);
+        this.game.load.spritesheet('arbreMarche', 'medias/img/arbreSpriteSheet.png', 32, 32);
         this.game.load.spritesheet('mort', 'medias/img/enemy-death.png', 32, 32);
         this.game.load.image('projectile', 'medias/img/gem-1.png');
     },
