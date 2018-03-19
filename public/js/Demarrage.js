@@ -13,11 +13,10 @@ DRAPEAU.Demarrage.prototype = {
     init: function() {
         this.game.scale.pageAlignHorizontally = true;
         this.game.scale.pageAlignVertically = true;
-        this.game.stage.backgroundColor = "#fcb79c";
+        this.game.stage.backgroundColor = "#000000";
     },
 
     create: function() {
-        console.log("DEMARRÉ");
         this.game.state.start("Jeu");
     }
 };
